@@ -11,30 +11,49 @@ import UIKit
 class DetailViewController: UIViewController {
 
     @IBOutlet weak var detailDescriptionLabel: UILabel!
+    @IBOutlet weak var imagen: UIImageView!
+    @IBOutlet weak var descripcion: UITextView!
+    @IBOutlet weak var stackView: UIStackView!
+    @IBOutlet weak var fecha: UILabel!
+    
 
-
-    func configureView() {
+        func configureView() {
         // Update the user interface for the detail item.
-        if let detail = detailItem {
-            if let label = detailDescriptionLabel {
-                label.text = detail.description
+        if let detail = self.detailItem {
+            if let label = self.detailDescriptionLabel {
+                label.text = detail.titulo
             }
+            if let imagen = self.imagen {
+                imagen.image = UIImage(named : detail.caratula)
+            }
+            if let descripcion = self.descripcion {
+                descripcion.text = detail.descripcion!
+            }
+            if let fecha = self.fecha {
+                     fecha.text = detail.fecha
+             }
         }
     }
-
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         configureView()
     }
 
-    var detailItem: NSDate? {
+    var detailItem: Pelicula? {
         didSet {
             // Update the view.
-            configureView()
+            self.configureView()
         }
     }
 
-
+    override func viewWillLayoutSubviews() {
+        if view.bounds.size.width >= view.bounds.size.height {
+            self.stackView.axis = .horizontal
+        }
+        else {
+            self.stackView.axis = .vertical
+        }
+    }
 }
 

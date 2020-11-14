@@ -14,6 +14,7 @@
 		6C9B09E6256046E9000E8E86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C9B09E4256046E9000E8E86 /* Main.storyboard */; };
 		6C9B09E8256046ED000E8E86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C9B09E7256046ED000E8E86 /* Assets.xcassets */; };
 		6C9B09EB256046ED000E8E86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C9B09E9256046ED000E8E86 /* LaunchScreen.storyboard */; };
+		6C9B09F32560472C000E8E86 /* Pelicula.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9B09F22560472C000E8E86 /* Pelicula.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		6C9B09E7256046ED000E8E86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C9B09EA256046ED000E8E86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6C9B09EC256046ED000E8E86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C9B09F22560472C000E8E86 /* Pelicula.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pelicula.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				6C9B09DC256046E9000E8E86 /* AppDelegate.swift */,
 				6C9B09DE256046E9000E8E86 /* SceneDelegate.swift */,
 				6C9B09E0256046E9000E8E86 /* MasterViewController.swift */,
+				6C9B09F22560472C000E8E86 /* Pelicula.swift */,
 				6C9B09E2256046E9000E8E86 /* DetailViewController.swift */,
 				6C9B09E4256046E9000E8E86 /* Main.storyboard */,
 				6C9B09E7256046ED000E8E86 /* Assets.xcassets */,
@@ -144,6 +147,7 @@
 				6C9B09DD256046E9000E8E86 /* AppDelegate.swift in Sources */,
 				6C9B09DF256046E9000E8E86 /* SceneDelegate.swift in Sources */,
 				6C9B09E1256046E9000E8E86 /* MasterViewController.swift in Sources */,
+				6C9B09F32560472C000E8E86 /* Pelicula.swift in Sources */,
 				6C9B09E3256046E9000E8E86 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
